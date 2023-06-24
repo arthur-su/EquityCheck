@@ -2,5 +2,20 @@
   "manifest_version": 3,
   "name": "EquityCheck",
   "version": "1.0",
-  "description": "Check if a company is supportive of the LGBTQ+ community"
+  "description": "Check if a company is supportive of the LGBTQ+ community",
+  "permissions": ["activeTab", "scripting"],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Q",
+        "mac": "Command+Q"
+      }
+    }
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches":
+    }
+  ]
 }
